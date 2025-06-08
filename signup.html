@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/LMS LOGO.png">
+  <link rel="stylesheet" href="signupStyle.css">
+  <title>LMS Sign Up</title>
+</head>
+<body>
+  <main>
+    <form id="signupForm" method="POST" action="signup.php">
+      <img class="signupLogo" src="images/LOGOCircle.png" alt="LMS Logo" width="300">
+      <div class="signupContainer">
+        <div class="fillupContainer">
+          <input type="text"
+          id="firstName" 
+          name="firstName" 
+          class="inputField" 
+          placeholder="First Name" 
+          required
+          pattern="[A-Za-z]+"> 
+
+          <input type="text" 
+          id="lastName" 
+          name="lastName" 
+          class="inputField" 
+          placeholder="Last Name" 
+          required
+          pattern="[A-Za-z]+">
+
+          <input type="text" 
+          id="username" 
+          name="username" 
+          class="inputField" 
+          placeholder="Username"
+          minlength="4"
+          maxlength="20" 
+          required>
+          
+          <select name="role" required>
+            <option value="">Select Role</option>
+            <option value="admin">Librarian</option>
+            <option value="user">User</option>
+          </select>
+
+          <input type="password" 
+          name="password" 
+          id="password" 
+          class="password" 
+          placeholder="Password" 
+          minlength="8"
+          maxlength="20"
+          required>
+
+          <input type="password" 
+          name="cfPassword" 
+          id="cfPassword" 
+          class="cfPassword" 
+          placeholder="Confirm Password"
+          required>
+
+          <button type="submit" class="signupButton"> Sign Up</button>
+          <a href="loginpage.html">Already have an account? </a>
+        </div>
+      </div>
+    </form>
+  </main>
+  <script>
+    document.getElementById('signupForm').addEventListener('submit', function(event) {
+      const password = document.getElementById('password');
+      const cfPassword = document.getElementById('cfPassword');
+      
+      if (password.value !== cfPassword.value) {
+        alert('Passwords do not match');
+        event.preventDefault();
+      }
+    });
+  </script>
+  
+</body>
+</html>

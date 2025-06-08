@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS Login Page</title>
+    <link rel="icon" href="images/LMS LOGO.png">
+    <link rel="stylesheet" href="loginStyles.css">
+</head>
+<body>
+    <header>
+        <img class="Logo" src="images/LOGOLOGIN.png" width="500" alt="LMS Logo">
+    </header>
+    
+    <main>
+        <form class="loginContainer" action="/login" method="post">
+            <div class="fillupContainer">
+                <div class="infoFields">
+                    <input 
+                    type="text" 
+                    id="username" 
+                    name="username" 
+                    class="inputField" 
+                    placeholder="Username" 
+                    required >
+
+                    <input 
+                    type="password" 
+                    id="password" 
+                    name="password"
+                    class="inputField"
+                    placeholder="Password" 
+                    required>
+                </div>
+                <div class="logInAndsignUpButton">
+                    <button type="submit" class="loginButton">Log In</button>
+                    <a href="signup.html" class="signupButton">Sign Up</a>
+                </div>
+                
+                <nav class="otherLinks">  
+                    <a href="/about">About us</a>
+                    <a href="/help">Help</a>
+                </nav>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

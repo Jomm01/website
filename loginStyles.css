@@ -1,0 +1,91 @@
+
+body {
+  font-family:'Segoe UI';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  margin: 0;
+  height: 100vh;
+}
+
+.loginContainer{
+  width: 500px;
+  height: 250px;  
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative; 
+  box-shadow: 5px 5px 5px 5px rgba(139, 69, 19, 0.2);
+            /* X   Y   blur */
+  border:1px solid #8B4513;
+}
+.inputField{
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  width: 450px;
+  height: 50px;
+  font-size: 20px;
+  margin: 10px;
+  border: 2px solid #C4A484;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.inputField:focus {
+  border-color: #8B4513;
+  outline: none;
+}
+
+.loginButton, .signupButton {
+  width: 200px;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+
+}
+
+.loginButton {
+  padding: 11px;
+  background-color: white;
+  color: #8B4513;
+  border: 2px solid #8B4513;
+}
+.loginButton:hover {
+  background-color: #A0522D;
+  color: white;
+}
+
+.signupButton {
+  background-color: transparent;
+  color: #222222;
+  border: 2px solid #222222;
+  padding: 8px 18px;
+}
+
+.signupButton:hover {
+  background-color: #222222;
+  color: white;
+}
+.otherLinks{
+  margin-top: 10px;
+  margin-right: 50px;
+}
+.otherLinks a {
+  margin: 45px;
+  text-decoration: none;
+  color: #8B4513;
+  font-size: 14px;
+}
+
+::placeholder{
+  font-size: 20px;
+}

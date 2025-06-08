@@ -1,0 +1,58 @@
+.signupContainer {
+  font-family: 'Segoe UI';
+  width: 400px;
+  margin: 0px auto;
+  padding: 20px;
+  border: 2px solid #a05a2c;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            /* X   Y   blur */
+}
+
+.signupLogo {
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+.fillupContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputField, select, .password, .cfPassword {
+  width: 90%;
+  padding: 8px;
+  border: 1px solid #a05a2c;
+  border-radius: 5px;
+}
+
+#firstName, #lastName {
+  width: 90%;
+}
+
+.signupButton {
+  width: 95%;
+  padding: 10px;
+  background-color: #a05a2c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.signupButton:hover {
+  background-color: #8a4f24;
+}
+
+a {
+  color: #a05a2c;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
